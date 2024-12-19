@@ -1,0 +1,300 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FBFEFE;
+}
+
+header{
+    padding: 20px 20px;
+    justify-content: space-between;
+    border-bottom: 1.5px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo{
+    line-height: 42px;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+header nav {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav a{
+    font-size: 28px;
+    font-weight: 400px;
+    text-decoration: none;
+    color: #1B2828;
+    padding-left: 50px;
+}
+
+header nav a:hover{
+    color: rgb(12, 193, 238);
+}
+
+.maincontainer{
+    padding-top: 150px;
+}
+
+.main{
+    text-align: center;
+}
+
+.main h1{
+    font-size: 120px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main img{
+    border: 1.5px;
+    border-radius: 28px;
+    max-width: 100%;
+}
+
+.subcontainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 1207px;
+    width: 100%;
+}
+
+.content img{
+    border-radius: 16px;
+    width: 413.33px;
+    height: 275px;
+    gap: 0px;
+    border: 1.5px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content h5{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    gap:0;
+    letter-spacing: -0.005em;
+    text-align: left;
+}
+
+.content p{
+    margin: 0;
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(20, 46, 46, 0.62); 
+}
+
+.about{
+    display: flex;
+    width: 900px;
+    height: 208px;
+    max-width: 900px;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52px;
+    padding-left: 320px;
+}
+
+.floating-text-div{
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+}
+
+.float-div, .empty{
+    flex: 1;
+}
+
+.floating-text{
+    text-align: left;
+    padding-right: 20px;
+    font-weight: 400;
+}
+
+.contact{
+    padding: 80px;
+}
+
+.contact-header{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-num{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.number-input{
+    height: 32px;
+    width: 27px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(37, 126, 126, 0.09);
+    padding: 16px 15px;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(20, 46, 46, 0.4);
+}
+
+.submit-button {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: 20px auto;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    background-color: #B0E8E8;
+    color: black;
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.skip {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.skip-anchor {
+    color: #B0E8E8;
+    text-decoration: none;
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+
+.footer-left-text{
+    font-size: 28px;
+    font-weight: 400;
+    color: rgba(20, 46, 46, 0.62);
+}
+
+.follow-btn{
+    width: 180px;
+    height: 48px;
+    background-color: white;
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    font-size:18px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(73, 110, 110, 0.2);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header .logo {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    header nav a {
+        font-size: 20px;
+        padding-left: 0;
+    }
+
+    .maincontainer {
+        padding-top: 50px;
+    }
+
+    .main h1 {
+        font-size: 48px;
+    }
+
+    .subcontainer {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 20px;
+    }
+
+    .content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        width: 100%;
+        padding-left: 20px;
+        font-size: 32px;
+        height: auto;
+    }
+
+    .floating-text-div {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .contact {
+        padding: 40px 20px;
+    }
+
+    .submit-button {
+        width: 90%;
+        max-width: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .footer-left-text {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .subcontainer {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        width: 100%;
+        padding-left: 50px;
+    }
+}
