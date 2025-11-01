@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✅ My To-Do List</h1>
+            <p class="subtitle">Organize your tasks efficiently!</p>
+        </header>
+
+        <!-- Add Task Form -->
+        <section class="add-task-section">
+            <h2>Add New Task</h2>
+            <form id="add-task-form">
+                <div class="form-group">
+                    <input type="text" id="task-name" placeholder="Task Name" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <select id="task-priority" required>
+                            <option value="Low">Low Priority</option>
+                            <option value="Medium" selected>Medium Priority</option>
+                            <option value="High">High Priority</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="task-due-date" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Task</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <label for="filter-select">Filter Tasks:</label>
+            <select id="filter-select">
+                <option value="All">All</option>
+                <option value="Active">Active</option>
+                <option value="Completed">Completed</option>
+            </select>
+        </section>
+
+        <!-- Tasks Display -->
+        <section class="tasks-section">
+            <h2>Your Tasks</h2>
+            <div id="tasks-container">
+                <p class="no-tasks" id="no-tasks-message">No tasks yet! Add some tasks to get started.</p>
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="stats-section" id="stats-section" style="display: none;">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="total-tasks">0</div>
+                    <div class="stat-label">Total Tasks</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="completed-tasks">0</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="active-tasks">0</div>
+                    <div class="stat-label">Active</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
